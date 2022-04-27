@@ -24,7 +24,7 @@ length.place(relx=0.5, rely=0.5, anchor=CENTER)
 #Creating Generate Button
 
 def PassGenerate():
-    messagebox.showinfo("Your Randomly Generated Password:", "")
+    messagebox.askokcancel('Password', 'Your Randomly Generated Password is: ')
 Generate=Button(FirstWindow, text="Generate", bd=5, bg="white", fg="black", command=PassGenerate)
 Generate.place(relx=0.5, rely=0.5, anchor=CENTER)
 
