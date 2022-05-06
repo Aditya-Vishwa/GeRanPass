@@ -31,7 +31,7 @@ class GUI():
         Window.iconphoto(False, icon) #Setting icon
         #root.configure(background="Black") #Background
 
-        self.label = Label(text="Password Generator", anchor=N, fg='darkblue', font='arial 20 bold underline')
+        self.label = Label(text=" Password Generator ", anchor=N, fg='white', bg='darkblue', font='arial 20 bold')
         self.label.grid(row=0, column=1)
 
         self.blank_label1 = Label(text="")
@@ -43,7 +43,7 @@ class GUI():
         self.blank_label2 = Label(text="")
         self.blank_label2.grid(row=3, column=0, columnspan=2)    
 
-        self.user = Label(text="Enter user name: ", font='times 15')
+        self.user = Label(text=" Enter Username: ", font='times 15')
         self.user.grid(row=4, column=0)
 
         self.textfield = Entry(textvariable=self.n_username, font='times 15', bd=6, relief='ridge')
@@ -53,7 +53,7 @@ class GUI():
         self.blank_label3 = Label(text="")
         self.blank_label3.grid(row=5, column=0)
 
-        self.length = Label(text="Enter password length: ", font='times 15')
+        self.length = Label(text=" Enter Password Length: ", font='times 15')
         self.length.grid(row=6, column=0)
 
         self.length_textfield = Entry(textvariable=self.n_passwordlen, font='times 15', bd=6, relief='ridge')
@@ -62,7 +62,7 @@ class GUI():
         self.blank_label4 = Label(text="")
         self.blank_label4.grid(row=7, column=0)
  
-        self.generated_password = Label(text="Generated password: ", font='times 15')
+        self.generated_password = Label(text=" Generated Password: ", font='times 15')
         self.generated_password.grid(row=8, column=0)
 
         self.generated_password_textfield = Entry(textvariable=self.n_generatedpassword, font='times 15', bd=6, relief='ridge', fg='darkgreen')
@@ -74,7 +74,7 @@ class GUI():
         self.blank_label6 = Label(text="")
         self.blank_label6.grid(row=10, column=0)
 
-        self.generate = Button(text="GENERATE PASSWORD", bd=3, relief='solid', padx=1, pady=1, font='forte 15 bold', fg='white', bg='darkblue', command=self.generate_pass)
+        self.generate = Button(text="GENERATE PASSWORD", bd=3, relief='solid', padx=1, pady=1, font='forte 15', fg='white', bg='darkblue', command=self.generate_pass)
         self.generate.grid(row=11, column=1)
 
         self.blank_label5 = Label(text="")
